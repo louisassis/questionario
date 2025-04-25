@@ -17,11 +17,11 @@ class Personagem {
 // Lista com todos os personagens do quiz
 const personagens = [
   new Personagem("Mario",  "Corajoso • Otimista • Líder nato",           "mario.png"),
-  new Personagem("Luigi", "Leal • Atrapalhado • Coração enorme",         "luigi.png"),
-  new Personagem("Bowser","Ambicioso • Impetuoso • Orgulhoso",          "bowser.png"),
-  new Personagem("Yoshi", "Ágil • Companheiro • Comilão",                "yoshi.png"),
-  new Personagem("Toad",  "Valente • Prestativo • Inteligente",           "toad.png"),
-  new Personagem("Donkey Kong","Atleta • Brincalhão • Forte",       "donkeykong.png"),
+  new Personagem("Luigi", "Leal • Atrapalhado • Coração enorme",         "imagens/luigi.png"),
+  new Personagem("Bowser","Ambicioso • Impetuoso • Orgulhoso",          "imagens/bowser.png"),
+  new Personagem("Yoshi", "Ágil • Companheiro • Comilão",                "imagens/yoshi.png"),
+  new Personagem("Toad",  "Valente • Prestativo • Inteligente",           "imagens/toad.png"),
+  new Personagem("Donkey Kong","Atleta • Brincalhão • Forte",       "imagens/donkeykong.png"),
   new Personagem("Peach", "Doce • Determinada • Líder",                  "peach.png")
 ];
 

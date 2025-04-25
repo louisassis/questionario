@@ -8,7 +8,7 @@
 /* Estilo geral do body com imagem de fundo */
 body {
   height: 94vh;
-  background-image: url(luigii.jpg);
+  background-image: url(imagens/luigii.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
