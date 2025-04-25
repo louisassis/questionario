@@ -1,0 +1,199 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do body com imagem de fundo */
+body {
+  height: 94vh;
+  background-image: url(luigii.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilo do título principal */
+h1 {
+  letter-spacing: 1px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 30px;
+  color: transparent;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: arcoiris 5s linear infinite;
+}
+
+/* Estilo de parágrafos */
+p {
+  letter-spacing: 1px;
+  font-family: "Press Start 2P", monospace;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Estilo do resultado com tema Mario */
+#resultado.mario {
+  background: #ffdf9e;
+  box-shadow: 0 0 15px rgba(255, 223, 158, 0.7);
+}
+
+/* Botões do quiz */
+.quiz-btn, .restart-btn, .start-btn {
+  all: unset;
+  cursor: pointer;
+  font-family: "Press Start 2P", monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #111;
+  border-radius: 8px;
+  transition: transform 0.1s, box-shadow 0.3s;
+}
+
+/* Estilo do botão quiz */
+.quiz-btn {
+  background: #00c4ff;
+  padding: 12px 28px;
+  margin: 14px 8px;
+  box-shadow:
+    0 0 0 2px #0a8db3 inset,
+    0 3px 0 0 #0a8db3,
+    0 0 10px #00c4ff;
+}
+
+.quiz-btn:hover {
+  filter: brightness(1.1);
+}
+
+.quiz-btn:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 0 0 2px #0a8db3 inset,
+    0 1px 0 0 #0a8db3 inset;
+}
+
+.quiz-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Botão de reinício (restart) com variações de cor */
+.restart-btn {
+  background: hsl(247, 86%, 62%);
+  padding: 12px 36px;
+  margin-top: 24px;
+}
+
+.restart-btn:hover {
+  filter: brightness(1.1);
+}
+
+.restart-btn:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 0 0 2px #8a1eef inset,
+    0 1px 0 0 #9c11ff inset;
+}
+
+.restart-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Botão de início (start) com tom neon verde */
+.start-btn {
+  font-size: 16px;
+  letter-spacing: 2px;
+  background: #41fc98ba;
+  padding: 14px 40px;
+  box-shadow:
+    0 0 0 2px #2afd1f inset,
+    0 3px 0 0 #69ef21,
+    0 0 12px #73ff00;
+}
+
+.start-btn:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 0 0 2px #3efd74 inset,
+    0 1px 0 0 #43c66a inset;
+}
+
+.start-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Estilização para imagens pixeladas */
+button, img {
+  image-rendering: pixelated;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+/* Seção de conteúdo com layout centrado e estilo gradiente */
+#inicio, #quiz, #resultado {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(#fef7f7, #fde4e4);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Títulos de segunda ordem */
+h2 {
+  font-family: "Press Start 2P", monospace;
+  font-size: 20px;
+  padding: 15px;
+}
+
+/* Cartões no estilo do Mario */
+.card {
+  max-width: 740px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  text-align: center;
+  image-rendering: pixelated;
+  border: 8px solid #1a2840;
+  outline: 8px solid #1a2840;
+  box-shadow:
+    0 0 0 4px #1a2840 inset,
+    0 0 20px #1a2840,
+    0 12px 0 #1a2840;
+  border-radius: 0;
+  animation: pop 0.4s ease;
+}
+
+/* Animação de entrada sutil para os cards */
+@keyframes pop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animação do texto arco-íris no h1 */
+@keyframes arcoiris {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Importa a fonte 8-bit estilo retro */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
